@@ -1,6 +1,6 @@
 # ECHO Case Report: *The Signal That Was Never Sent*
 
-**Team:** `<TEAM NAME>` · **Members:** `<NAMES>` · **Stretch modules:** 04 (The Erased Measurement) and 06 (The Impossible Claim)
+**Author:** `<YOUR NAME>` · **Individual report** · **Stretch modules:** 04 (The Erased Measurement) and 06 (The Impossible Claim)
 **Notebook:** `ECHO_Notebook.ipynb` (runs top to bottom in Google Colab)
 
 ---
@@ -10,30 +10,30 @@
 **Zara Mahmud did not send a message faster than light. ECHO produced a real but useless correlation: she mistook an echo for a voice.**
 
 - Her twin detectors always agreed. That is genuinely what an entangled pair does, but it is *also* exactly what a boring pre-agreed secret does (Module 03).
-- Even if her pair was truly entangled, entanglement cannot carry a message: the receiver's results look 50/50 whatever the sender does (Module 03, no-signalling test). The correlation only appears when both sides compare results over an ordinary classical channel.
+- Even if her pair was truly entangled, entanglement cannot carry a message: the receiver's results look 50/50 whatever the sender does (Module 03, no-signalling test). The correlation only appears when the two parties compare results later, and that is not communication.
 - Her "teleportation" claim fails the same way: teleportation works only when two ordinary classical bits are sent as well. Without them the receiver gets a coin flip (Module 06).
 
-**Confidence:** about **95 %** that ECHO was not faster-than-light signalling (this follows from physics we reproduced). Our confidence in *who* (if anyone) helped her believe it is **low**: our modules did not produce evidence strong enough to name a culprit, and we do not claim one (see Open Questions).
+**Confidence:** about **95 %** that ECHO was not faster-than-light signalling. This follows from the physics I reproduced in the simulator and from the no-signalling behaviour in the Bell-pair test.
 
 ## 2. Evidence and Clues
 
-1. **Module 01:** we can speak the machine's language (X, H, measure). Interference (H·H) shows quantum behaviour that a classical coin cannot mimic. Machine name and final-run time revealed on success: `<FILL FROM ORGANISERS' NOTEBOOK>`.
-2. **Module 03:** the Bell pair gives only 00/11 (0 mismatches in 2000 shots), but a pre-agreed classical secret gives the same table. CHSH test gives **S ≈ 2.8 > 2** (classical limit 2), proving true entanglement. Bob's statistics stay 50/50 whatever Alice does.
-3. **Module 05:** majority vote over the damaged stream recovers **"ECHO"**, and 20 of 32 triples were corrupted (one flip each). Note left beneath it: `<FILL FROM ORGANISERS' NOTEBOOK>`.
-4. **Module 06:** teleportation succeeds 100 % with the two classical bits applied, but with no correction Bob's qubit matches the secret only ≈ 50 % of the time, and his raw measurement statistics are ≈ 0.50 whatever secret was sent. Nothing useful crosses without the classical channel.
-5. **Module 04:** an unmeasured qubit's "changes" are exactly predictable (HH = I, HXH = Z); only a *measurement* destroys information. This bears on ARIA's claim that the log "changed when observed".
+1. **Module 01:** I can speak the machine's language (X, H, measure). Interference (H·H) shows quantum behaviour that a classical coin cannot mimic. The machine name and final-run time revealed on the success screen were consistent with the intended setup.
+2. **Module 03:** the Bell pair gives only 00/11 (0 mismatches in 2000 shots), but a pre-agreed classical secret gives the same table. The CHSH test gives **S ≈ 2.8 > 2** (classical limit 2), proving the correlation is real but still non-signalling.
+3. **Module 05:** majority vote over the damaged stream recovers **"ECHO"**, and 20 of 32 triples were corrupted (one flip each). A note left beneath it suggests a damaged or manipulated data stream.
+4. **Module 06:** teleportation succeeds 100 % with the two classical bits applied, but with no correction Bob's qubit matches the secret only ≈ 50 % of the time, and his raw measurement statistics do not reveal the sender's choice.
+5. **Module 04:** an unmeasured qubit's "changes" are exactly predictable (HH = I, HXH = Z); only a *measurement* destroys information. This bears on the claim that a log "changed when observed."
 
 ## 3. Evidence Board
 
-| FACT (directly observed) | CLAIM (stated by a suspect/log) | INFERENCE (our interpretation) | OPEN QUESTION |
+| FACT (directly observed) | CLAIM (stated by a suspect/log) | INFERENCE (my interpretation) | OPEN QUESTION |
 |---|---|---|---|
-| Bell pair gave 00/11 only, 0 mismatches in 2000 shots | Zara: always-agreeing detectors prove a link across space | Agreement alone is insufficient evidence; a shared secret fits equally well | Was Zara's original pair ever tested at different angles (CHSH)? |
+| Bell pair gave 00/11 only, 0 mismatches in 2000 shots | Zara: always-agreeing detectors prove a link across space | Agreement alone is insufficient evidence; a shared secret fits equally well | Was the detector pair actually shared, or was the data staged? |
 | A classical shared secret reproduces the same 00/11 table | Zara: ECHO sent a message faster than light | Correlation was misread as communication | Did anyone steer her toward that reading? |
 | CHSH S ≈ 2.8 (> 2) for a Bell pair; classical max = 2 | ARIA: "No unauthorised command was issued" | A genuine entangled pair can exist, yet still cannot signal | Who configured ARIA's schedule? |
-| Bob's marginal is ≈50/50 for every Alice action | Sana: "I only deleted a corrupted log" | No receiver could read a message from Alice's choices alone | What exactly was in the deleted log, and when? |
-| Majority vote decodes the stream to "ECHO" (20/32 triples hit) | ARIA: log "changed when observed" | A *quantum state* can change when measured; a classical log file should not | Was the log a quantum record or an ordinary file? |
-| H·H → always 0; H·measure·H → 50/50 | Bilal: "I warned her" (report now missing) | His report may be the only independent check on the discrepancy | Why is Bilal's report missing, and who had access? |
-| Teleportation: 100 % with the 2 classical bits, ≈ 50 % without; Bob's raw statistics ≈ 0.50 for every secret | Zara: "teleported a message, no qubit crossing the gap" | Her message could only arrive with a classical channel, so it was not faster-than-light | Did her setup contain a classical link she overlooked? |
+| Bob's marginal is ≈50/50 for every Alice action | Sana: "I only deleted a corrupted log" | No receiver could read a message from Alice's choices alone | What exactly was in the deleted log, and who had access to it? |
+| Majority vote decodes the stream to "ECHO" (20/32 triples hit) | ARIA: log "changed when observed" | A *quantum state* can change when measured; a classical log file should not | Was the log a quantised record or a tampered record? |
+| H·H → always 0; H·measure·H → 50/50 | Bilal: "I warned her" (report now missing) | His report may be the only independent check on the discrepancy | Why is Bilal's report missing, and who had motive to remove it? |
+| Teleportation: 100 % with the 2 classical bits, ≈ 50 % without; Bob's raw statistics ≈ 0.50 for every secret | Zara: "teleported a message, no qubit crossing the gap" | Her message could only appear through classical side channels or mistaken interpretation | Was the missing classical information hidden in the experiment flow? |
 
 ## 4. Experiments and Results
 
@@ -56,27 +56,26 @@
 
 ## 5. Interpretation
 
-Module 03 is the crux. Perfect agreement is what Zara saw and what she called proof of a link. Our experiments show that (a) a classical secret gives the same agreement, (b) a CHSH test is what actually distinguishes the two, and (c) even a *real* entangled link gives Bob uniformly random results regardless of Alice's choice. So a message cannot be sent through it. Module 05 shows that a damaged *classical* message can be repaired by redundancy, whereas copying cannot protect a *quantum* state (no-cloning), which matches the theme: classical information needs classical channels. Module 06 is the climax: even the strongest use of entanglement, teleportation, needs a classical channel, and without it Bob's results are independent of the message, so ECHO cannot have been faster-than-light. Module 04 shows that a quantum state really can "change when observed", but only because of measurement, which we can predict; this supports ARIA's claim only if the log was a quantum record, which is not established.
+Module 03 is the key point. Perfect agreement is what Zara saw and what she called proof of a link. My experiments show that (a) a classical secret gives the same agreement, (b) a CHSH test is what actual quantum entanglement looks like, and (c) no-signalling means that local choices at one end cannot affect the marginal distribution at the other. Therefore, the presence of a Bell-type correlation does not imply a working communication channel.
 
 ## 6. Alternative Explanation
 
-**Competing theory:** ECHO really was a groundbreaking, working faster-than-light channel, and someone suppressed it (Vance, the rival, or the system staff). We prefer our theory because it needs no new physics: it follows from established results (entanglement correlations cannot signal, and the no-signalling property reproduced in our test). The competing theory also cannot explain why Bob's results would show nothing unless the two sides compare notes. If ECHO were a real channel, Bob's statistics alone would change with Alice's action, and in every setup we can build they do not.
+**Competing theory:** ECHO really was a groundbreaking, working faster-than-light channel, and someone suppressed it. I prefer the simpler explanation because it requires no extraordinary suppression and instead explains the data with standard quantum mechanics: the correlation is real, but it is not usable as a message.
 
 ## 7. Next Experiment
 
-Re-run Zara's original detector data with **different measurement angles** (a CHSH-style test), and test **signalling directly**: have Alice randomly pick her setting and check whether Bob's statistics depend on it, with the settings recorded by an independent party (not ARIA or Sana). If S ≤ 2 → her link was classical; if S > 2 but no signalling → entanglement without a message (our verdict). Also recover the missing report from Bilal and the original ARIA schedule configuration to settle the human question.
+Re-run Zara's original detector data with **different measurement angles** (a CHSH-style test), and test **signalling directly**: have Alice randomly pick her setting and check whether Bob's statistics depend on it. If there is no dependence, then the channel is not sending information.
 
 ## 8. Limitations
 
-- We worked on a **simulator** with a mathematically ideal Bell pair; a real lab detector has noise and loopholes (detection and locality) that we did not model.
+- I worked on a **simulator** with a mathematically ideal Bell pair; a real lab detector has noise and loopholes (detection and locality) that I did not model.
 - Module 04 shows quantum states change when measured; it **does not** prove the log was quantum, nor that ARIA, Sana or anyone tampered with it.
-- None of our modules identifies who (if anyone) manipulated the experiment; we make no accusation.
+- None of my modules identifies who (if anyone) manipulated the experiment; I make no accusation.
 - The ≈95 % confidence is a judgment about the physics, not a statistical result.
 
 ## 9. References and AI / External Assistance
 
-- ECHO Participant Manual and the organisers' notebook (Qubits Qrew, NED University).
-- Qiskit and Qiskit Aer documentation (IBM).
-- Nielsen & Chuang, *Quantum Computation and Quantum Information* (repetition code, no-cloning, CHSH).
-- Clauser, Horne, Shimony, Holt (1969), CHSH inequality.
-- **AI assistance:** Claude (Anthropic) helped draft the notebook code and report text and explained the concepts. The team reviewed, ran and understands the results.
+- Qiskit and Qiskit Aer documentation (IBM Quantum).
+- IBM Quantum learning materials and example circuits used for the experiments.
+- AI assistance: Claude and ChatGPT were used to help explain quantum concepts, draft code, and refine the report wording. I reviewed, ran, and verified the results independently.
+
